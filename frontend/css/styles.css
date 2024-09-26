@@ -1,0 +1,248 @@
+header{
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+    border-bottom: solid 1px rgb(233, 239, 236);
+}
+
+.btn-warning{
+    background-color: rgb(233, 239, 236);
+    border: 1px solid rgb(233, 239, 236);
+}
+.btn-warning:hover{
+    background-color: rgb(22, 66, 60);
+    border: 1px solid rgb(233, 239, 236);
+    color: rgb(233, 239, 236);
+}
+
+#hero {
+    text-align: center;
+    background-color: rgb(22, 66, 60);
+    padding: 50px;
+    color: white;
+}
+#hero p {
+    font-size: 1.3rem;
+}
+
+/*fonts*/
+.afacad{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+.abel {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.kanit{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}  
+
+#hero > * {
+    margin: 30px;
+}
+.cta-button {
+    background-color: rgb(233, 239, 236);
+    color: rgb(22, 66, 60);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+ 
+input[type="text"], select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+input[type="number"], select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(196, 218, 210);
+    color: rgb(22, 66, 60);
+}
+
+/* Auth Section */
+#auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(233, 239, 236);
+}
+.auth-container {
+    background-color: rgb(106, 156, 137);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+#auth-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+#auth-section button {
+    width: 84%;
+}
+
+/*faqs section*/
+#faqs {
+    background-color: rgb(196, 218, 210);
+    padding: 30px;
+    text-align: left;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+.faq-item h3 {
+    color: rgb(22, 66, 60);
+    font-size: 1.5em;
+}
+.faq-item p {
+    font-size: 1.2em;
+    color: rgb(22, 66, 60);
+}
+
+/*about section*/
+#about {
+    text-align: left;
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+}
+
+/* SDG Section */
+#live-chart, #sdg-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb;
+}
+/*
+.infographic > ul{
+    list-style: none;
+}   */
+.infographic > ul > li{
+    margin-bottom: 10px;
+}
+#sdg-data{
+    color: rgb(22, 66, 60);
+    padding: 20px;
+    font-family: abel;
+    font-size: 1.1rem;
+}
+
+.infographic > ul > li > ul > * {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #33372C;
+    font-family: kanit;
+}
+
+#contribute{
+    background-color: rgb(22, 66, 60);
+}
+.card-header{
+    background-color: rgb(196, 218, 210);
+    color: rgb(22, 66, 60);
+}
+.card-body{
+    color: rgb(22, 66, 60);
+    font-weight: bold;
+}
+.card-body button{
+    background-color: rgb(196, 218, 210);
+    color: rgb(22, 66, 60);
+    border:2px solid rgb(22, 66, 60);
+}
+.card-body button:hover{
+    background-color: rgb(22, 66, 60);
+    color: rgb(196, 218, 210);
+    border: none;
+}
+.c1{
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+}
+#custom-amount{
+    height: 45px;
+    margin-top: 0;
+}
+
+#contribute h2{
+    color: white;
+}
+#contribute>div>div>p {
+    color: rgb(196, 218, 210);
+}
+#clothes-donation button{
+    border: 1px solid rgb(233, 239, 236);
+}
+#clothes-donation button:hover{
+    border: 1px solid rgb(22, 66, 60);
+}
+
+/*Footer section*/
+#footer{
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+}
+#footer svg{
+    color: rgb(233, 239, 236);
+}
+
+
+@media (min-width: 800px) {
+    #live-chart, #sdg-data{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 0px;
+    }
+    #clothes-donation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .infographic > ul{
+        text-align: left;
+        list-style:circle;
+    }
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+    #clothes-donation > div{
+        margin-top: 40px;
+    }
+}
