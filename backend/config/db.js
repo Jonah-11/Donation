@@ -4,18 +4,18 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME
+    host: 'mysql.railway.internal',
+    user: 'root',
+    password: 'gIcwGgttUgWvNkbJObDfCzpxvysHWRiG',
+    database: 'railway'
 });
 
 db.connect((err) => {
     if (err) {
-        console.error('Error connecting to the database:', err);
+        console.error('Error connecting to the Railway database:', err);
         return;
     }
-    console.log('Connected to MySQL database');
+    console.log('Connected to Railway MySQL database');
 });
 
 module.exports = db;
